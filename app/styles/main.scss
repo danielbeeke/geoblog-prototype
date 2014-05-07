@@ -1,0 +1,62 @@
+// bower:scss
+@import "../../bower_components/compass-mixins/lib/_compass.scss";
+// endbower
+
+@import 'typography';
+@import 'Leaflet.PagerMarker';
+
+$speed: .3s;
+
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#map {
+  @include transition(all $speed);
+  height: 100%;
+}
+
+.article.full {
+  @include transition(all $speed);
+
+  > .header {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+
+    > .inner {
+      width: 960px;
+      margin: 0 auto;
+    }
+  }
+
+  > .content {
+    padding-top: 100px;
+    width: 960px;
+    margin: 0 auto;
+  }
+}
+
+.layout-map {
+  #map {
+    height: 100%;
+  }
+
+  .article {
+    display: none;
+    @include opacity(0);
+  }
+}
+
+.layout-article {
+  #map {
+    height: 50%;
+  }
+
+  .article {
+    @include opacity(1);
+  }
+}

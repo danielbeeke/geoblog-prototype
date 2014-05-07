@@ -1,0 +1,12 @@
+{
+  "name": "geoblog-prototype",
+  "private": true,
+  "dependencies": {
+    "modernizr": "~2.6.2",
+    "jquery": "~1.11.0",
+    "leaflet": "~0.7.2",
+    "compass-mixins": "~1.0.0",
+    "responsive-elements": "*"
+  },
+  "devDependencies": {}
+}
