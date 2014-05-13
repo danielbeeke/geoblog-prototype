@@ -27,7 +27,11 @@ $(function() {
         }
       })
 
-      L.tileLayer('http://tilemill.studiofonkel.nl/style/{z}/{x}/{y}.png?id=tmstyle:///home/administrator/styles/geoblog.tm2').addTo(map);
+
+      L.tileLayer('https://dnv9my2eseobd.cloudfront.net/v3/mohsin.i7ai3cl7/{z}/{x}/{y}.png').addTo(map);
+
+      // L.tileLayer('https://{s}.tiles.mapbox.com/v3/examples.map-y7l23tes/{z}/{x}/{y}.png').addTo(map);
+      // L.tileLayer('http://tilemill.studiofonkel.nl/style/{z}/{x}/{y}.png?id=tmstyle:///home/administrator/styles/geoblog.tm2').addTo(map);
 
       $.each(articles, function (id, article) {
         functions.createMarker(id, article)

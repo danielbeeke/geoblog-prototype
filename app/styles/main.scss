@@ -53,7 +53,8 @@ html, body {
 
 .layout-article {
   #map {
-    height: 50%;
+    height: 30%;
+    @include opacity(.2);
   }
 
   .article {
